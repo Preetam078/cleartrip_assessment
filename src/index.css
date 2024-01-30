@@ -1,13 +1,70 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+}
+.App__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.App {
+  width: 400px;
+  height: 99vh;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+.input__wrapper {
+  background-color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+.input__wrapper > input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 20px;
+}
+.navbutton__wrapper  {
+  margin-top: 15px;
+  padding-left: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbutton__wrapper > button  {
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  background-color: white;
+  cursor: pointer;
+}
+.hotels__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hotel__wrapper  {
+  position: relative;
+  margin: 20px 0;
+}
+.hotel__wrapper > img {
+  width: 91%;
+  height: 200px;
+  border-radius: 15px;
+}
+.hotel__wrapper > h3 {
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.hotel__wrapper > span {
+  font-weight: 600;
+}
+.fav__icon {
+  position: absolute;
+  top: 15px;
+  right: 57px;
+  color: white;
+  cursor: pointer;
 }
